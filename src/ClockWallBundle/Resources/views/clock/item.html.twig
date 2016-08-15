@@ -1,0 +1,13 @@
+<div>
+    <script>
+        var {{locationTimeData.getIdentifier}}Date = new Date({{ locationTimeData.getCurrentTimestamp }} * 1000);
+        setInterval(function () {
+            var identifier = '{{ locationTimeData.getIdentifier }}';
+            var d = {{locationTimeData.getIdentifier}}Date;
+            d.setSeconds(d.getSeconds() + 1);
+            $('#' + identifier).text(d.toLocaleTimeString());
+        }, 1000);
+    </script>
+    <p><b>{{ locationTimeData.getName }}</b></p>
+    <p id="{{ locationTimeData.getIdentifier }}"></p>
+</div>

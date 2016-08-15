@@ -1,0 +1,9 @@
+services:
+    clock_wall.time_provider:
+        class: %clock_wall.time_provider.class%
+        calls:
+            - [addLocation, ['Tokyo', 'Asia/Tokyo', 'Tokyo']]
+            - [addLocation, ['New York', 'America/New_York', 'NewYork']]
+            - [addLocation, ['London', 'Europe/London', 'London']]
+            - [addLocation, ['Moscow', 'Europe/Moscow', 'Moskow']]
+            - [addLocation, ['Kiev', 'Europe/Kiev', 'Kiev']]

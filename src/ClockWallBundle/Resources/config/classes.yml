@@ -1,0 +1,2 @@
+parameters:
+    clock_wall.time_provider.class: ClockWallBundle\Services\TimeProvider
